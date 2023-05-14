@@ -52,6 +52,13 @@
             <artifactId>spring-security-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>2.0.25</version>
+        </dependency>
+        
     </dependencies>
     <dependencyManagement>
         <dependencies>
@@ -82,7 +89,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>com.example.modelprojectbackend.ModelProjectBackendApplication</mainClass>
+                    <mainClass>com.example.ModelProjectBackendApplication</mainClass>
                     <skip>true</skip>
                 </configuration>
                 <executions>

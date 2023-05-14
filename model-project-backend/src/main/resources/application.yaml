@@ -1,4 +1,6 @@
-server.port=8080
-mybatis.mapper-locations=classpath:mappers/*xml
-mybatis.type-aliases-package=com.example.modelprojectbackend.mybatis.entity
-
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://106.55.36.19:3306/ruihfang?useUnicode=true&characterEncoding=utf-8
+    username: ruihfang
+    password: 123456789
