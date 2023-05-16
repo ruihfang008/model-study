@@ -10,6 +10,12 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
+/**
+ * 授权服务
+ *
+ * @author lulufang
+ * @date 2023/05/16
+ */
 @Service
 public class AuthorizeService implements UserDetailsService {
     @Resource
