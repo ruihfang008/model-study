@@ -8,8 +8,12 @@
       <div style="font-size: 20px;margin-bottom: 5px">在这里你可以学到JAVA相关得所有知识，学习如何搭建网址，如何搭建博客等。</div>
       <div style="font-size: 5px">在这里你还可以同性交友，因为没有女孩子学习JAVA!</div>
     </div>
-    <div style="width: 300px;background-color: white">
-      <router-view/>
+    <div style="width: 300px;background-color: white;z-index: 1">
+      <router-view v-slot="{ Component }">
+        <transition name="el-fade-in-linear">
+          <component :is="Component" />
+        </transition>
+      </router-view>
     </div>
   </div>
 </template>

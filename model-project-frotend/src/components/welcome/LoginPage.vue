@@ -30,7 +30,7 @@
         <span style="color: gray">还没有账号</span>
       </el-divider>
       <div style="margin-top: 20px">
-        <el-button style="width: 270px" type="success" plain>注册账号</el-button>
+        <el-button @click="router.push('/register')" style="width: 270px" type="success" plain>注册账号</el-button>
       </div>
     </div>
   </div>
